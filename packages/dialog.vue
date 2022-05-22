@@ -1,40 +1,40 @@
 <template>
   <div>
     <transition name='l-transition'>
-      <div class='l-Dialog' v-show='visible'>
+      <div class='l-Dialog' v-show="visible">
         <div
           class='l-dialog__wrapper'
-          style='z-index: 2009'
-          @click.self='handleCli'
+          style="z-index: 2009"
+          @click.self="handleCli"
         >
-          <div class='l-dialog' :style='{ width: width, marginTop: top }'>
+          <div class='l-dialog' :style="{ width: width, marginTop: top }">
             <!-- 头部标题 -->
-            <div class='l-dialog__header'>
-              <slot name='title'>
-                <span class='l-dialog__title'>{{ title }}</span>
+            <div class="l-dialog__header">
+              <slot name="title">
+                <span class="l-dialog__title">{{ title }}</span>
               </slot>
               <l-button
-                aria-label='Close'
-                class='l-dialog__headerbtn'
+                aria-label="Close"
+                class="l-dialog__headerbtn"
                 @click="handleCli"
               >
-                <i class='el-dialog__close el-icon el-icon-close'></i>
+                <i class="el-dialog__close el-icon el-icon-close"></i>
               </l-button>
             </div>
             <!-- 主体区域 -->
-            <div class='l-dialog__body'>
+            <div class="l-dialog__body">
               <!-- 定义插槽 -->
               <slot></slot>
             </div>
             <!-- 底部 -->
-            <div class='l-dialog__footer' v-if='$slots.footer'>
+            <div class="l-dialog__footer" v-if="$slots.footer">
               <!-- 插槽 -->
-              <slot name='footer'></slot>
+              <slot name="footer"></slot>
             </div>
           </div>
         </div>
         <!-- 遮罩层 -->
-        <div class='v-modal' tabindex='0' style='z-index: 2008'></div>
+        <div class="v-modal" tabindex="0" style="z-index: 2008"></div>
       </div>
     </transition>
   </div>

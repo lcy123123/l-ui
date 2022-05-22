@@ -10,9 +10,9 @@
       :value="value"
       @input="handleInput"
     />
-    <span class="l-input__suffix" v-if="clearable||showPassword">
-      <i class="el-input__icon el-icon-circle-close" v-if="clearable&&value" @click="clear"></i>
-      <i class="el-input__icon el-icon-view el-input__clear" v-if="showPassword&&value" @click="handlePassword"></i>
+    <span class='l-input__suffix' v-if="clearable||showPassword">
+      <i class='el-input__icon el-icon-circle-close' v-if="clearable&&value" @click="clear"></i>
+      <i class='el-input__icon el-icon-view el-input__clear' v-if="showPassword&&value" @click="handlePassword"></i>
     </span>
   </div>
 </template>

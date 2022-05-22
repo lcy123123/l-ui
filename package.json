@@ -1,7 +1,11 @@
 {
-  "name": "l-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@liucongyu/l-ui",
+  "version": "0.1.1",
+  "private": false,
+  "main":"dist/l-ui.umd.min.js",
+  "author":{
+    "name":"刘丛宇"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

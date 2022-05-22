@@ -1,7 +1,7 @@
 import LButton from './button.vue'
 import LDialog from './dialog.vue'
 import LInput from './input.vue'
-import './index.css'
+import './fonts/index.css'
 
 const components = [
   LButton,
